@@ -33,24 +33,24 @@ public class Eleves implements Serializable {
     private String prenomEl;
     private String sexeEl;
     private String quartierEl;
-    @DateTimeFormat(pattern = "YYYY-MM-dd")
+    @DateTimeFormat(pattern ="YYYY-MM-dd")
     private Date dateNais;
 
-    @OneToMany(mappedBy = "eleves", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy ="eleves", fetch = FetchType.LAZY)
     private Collection<Notes> notes;
     @ManyToOne
     private Classes classes;
 
     @ManyToMany
     @JoinTable( name = "Eleve_Convocation",
-                joinColumns = @JoinColumn( name = "idEleves" ),
-                inverseJoinColumns = @JoinColumn( name = "idConvocations" ) )
+                joinColumns = @JoinColumn( name ="idEleves" ),
+                inverseJoinColumns = @JoinColumn( name ="idConvocations" ) )
     private List<Convocations> convocationlList = new ArrayList<>();
 
     @ManyToMany
     @JoinTable( name = "Eleve_Evenement",
-                joinColumns = @JoinColumn( name = "idEleves" ),
-                inverseJoinColumns = @JoinColumn( name = "idEvenements " ) )
+                joinColumns = @JoinColumn( name ="idEleves" ),
+                inverseJoinColumns = @JoinColumn( name ="idEvenements " ) )
     private List<Evenements> evenementList = new ArrayList<>();
 
 }

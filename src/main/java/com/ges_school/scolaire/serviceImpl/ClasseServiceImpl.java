@@ -6,11 +6,13 @@ import com.ges_school.scolaire.Iservices.IClasseService;
 import com.ges_school.scolaire.dao.ClasseRepository;
 import com.ges_school.scolaire.entities.Classes;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import lombok.AllArgsConstructor;
 
-@Service @AllArgsConstructor
+
+@Service 
 public class ClasseServiceImpl implements IClasseService {
+    @Autowired
 private ClasseRepository classeRepository;
     @Override
     public List<Classes> getAllClasses() {
