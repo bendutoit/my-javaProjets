@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.ges_school.scolaire.entities.Classes;
 
-public interface IClasseService {
+public interface IClassesService {
 
     List<Classes> getAllClasses();
     Classes saveClasses(Classes cl);

@@ -2,8 +2,8 @@ package com.ges_school.scolaire.serviceImpl;
 
 import java.util.List;
 
-import com.ges_school.scolaire.Iservices.IClasseService;
-import com.ges_school.scolaire.dao.ClasseRepository;
+import com.ges_school.scolaire.Iservices.IClassesService;
+import com.ges_school.scolaire.dao.ClassesRepository;
 import com.ges_school.scolaire.entities.Classes;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,9 +11,9 @@ import org.springframework.stereotype.Service;
 
 
 @Service 
-public class ClasseServiceImpl implements IClasseService {
+public class ClassesServiceImpl implements IClassesService {
     @Autowired
-private ClasseRepository classeRepository;
+private ClassesRepository classeRepository;
     @Override
     public List<Classes> getAllClasses() {
         

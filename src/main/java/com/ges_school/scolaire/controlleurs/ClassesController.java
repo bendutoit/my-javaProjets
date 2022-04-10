@@ -2,7 +2,7 @@ package com.ges_school.scolaire.controlleurs;
 
 import java.util.List;
 
-import com.ges_school.scolaire.Iservices.IClasseService;
+import com.ges_school.scolaire.Iservices.IClassesService;
 import com.ges_school.scolaire.entities.Classes;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,9 +19,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 
 @Controller 
-public class ClasseController {
+public class ClassesController {
 @Autowired
-    private IClasseService classeService;
+    private IClassesService classeService;
     
 
     @GetMapping(path = "/classes")

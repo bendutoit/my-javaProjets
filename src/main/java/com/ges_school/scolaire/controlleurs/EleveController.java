@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.List;
 
-import com.ges_school.scolaire.Iservices.IClasseService;
+import com.ges_school.scolaire.Iservices.IClassesService;
 import com.ges_school.scolaire.Iservices.IEleveService;
 import com.ges_school.scolaire.entities.Classes;
 import com.ges_school.scolaire.entities.Eleves;
@@ -31,7 +31,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class EleveController {
 
     @Autowired
-    private IClasseService classeService;
+    private IClassesService classeService;
    
     @Autowired
     
