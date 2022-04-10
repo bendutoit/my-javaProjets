@@ -7,9 +7,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
-@EnableJpaRepositories("com.ges_school.scolaire.*")
+@EnableJpaRepositories("com.ges_school.scolaire.ClassesRepository.java")
  @ComponentScan(basePackages = {"com.ges_school.scolaire.*" })
- @EntityScan("com.ges_school.scolaire.*")
+ @EntityScan("com.ges_school.scolaire.Classes.java")
 
 @SpringBootApplication
 public class ScolaireApplication {
