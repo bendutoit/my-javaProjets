@@ -9,7 +9,7 @@ public interface IClasseService {
     List<Classes> getAllClasses();
     Classes saveClasses(Classes cl);
     public void deleteClasses(Long idClasses);
-    Classes getClassesById(Long idClasses);
+   Classes getClassesById(Long idClasses);
     Classes updateClasses(Classes cl);
     
 

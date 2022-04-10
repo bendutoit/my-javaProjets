@@ -40,8 +40,8 @@ private ClasseRepository classeRepository;
         classeRepository.deleteById(idClasses);
     }
 
-    @Override
-    public Classes getClassesById(Long idClasses) {
+     @Override
+   public Classes getClassesById(Long idClasses) {
         
         return classeRepository.findClassesById(idClasses);
     }
